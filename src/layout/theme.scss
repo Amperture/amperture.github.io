@@ -2,8 +2,10 @@
 
 $md-light-theme: false;
 $md-primary-color: $md-green-900;
-$md-secondary-color: $md-deep-orange-a-200;
-$md-tertiary-color: $md-grey-700;
+$md-secondary-color: $md-light-green-a-100;
+$md-tertiary-color: $md-grey-900;
+$md-light-text-color: $md-grey-100;
+$md-dark-text-color: $md-grey-900;
 
 .main-container,
 .darker-background {
@@ -11,10 +13,16 @@ $md-tertiary-color: $md-grey-700;
 }
 
 ul,
+.md-card-text,
 ol {
   color: white;
 }
 
+Button {
+  a:link {
+    color: white;
+  }
+}
 a:link {
     color: $md-secondary-color;
     text-decoration: none;

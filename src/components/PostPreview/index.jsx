@@ -50,7 +50,7 @@ class PostPreview extends Component {
             <PostCover postNode={postInfo} coverHeight={coverHeight} />
             <MediaOverlay>
               <CardTitle title={postInfo.title}>
-                <Button raised secondary className="md-cell--right">
+                <Button raised primary className="md-cell--right">
                   Read
                 </Button>
               </CardTitle>
