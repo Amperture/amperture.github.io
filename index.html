@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amperture Engineering</title>
+  <meta name="description" content="Amperture Engineering: embedded firmware and hardware projects.">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --fg: #1d1d1b;
+      --muted: #5c5c57;
+      --card: #ffffff;
+      --rule: #e2e2dc;
+      --accent: #1a5fb4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141414;
+        --fg: #ececea;
+        --muted: #9d9d97;
+        --card: #1d1d1c;
+        --rule: #2c2c2a;
+        --accent: #7fb2f0;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 4rem 1.25rem 3rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.25rem;
+    }
+    header .tagline {
+      color: var(--muted);
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin: 3rem 0 1rem;
+      font-weight: 600;
+    }
+    .project {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 10px;
+      padding: 1.25rem 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .project h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .project p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .project .status {
+      display: inline-block;
+      margin-top: 0.6rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer p { margin: 0.25rem 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Amperture Engineering</h1>
+      <p class="tagline">Embedded firmware and hardware projects, mostly C and Zephyr, with Python tooling around them. Currently building a USB MIDI controller.</p>
+    </header>
+
+    <h2>Projects</h2>
+
+    <section class="project">
+      <h3><a href="https://github.com/Amperture/mideej">mideej</a></h3>
+      <p>A class-compliant USB MIDI fader box built on Zephyr RTOS and an ESP32-S3.
+      It enumerates as a USB MIDI 2.0 device and sends control-change messages
+      that arrive on Linux with no host-side driver.</p>
+      <span class="status">In progress</span>
+    </section>
+
+    <section class="project">
+      <h3><a href="https://github.com/Amperture/msp430-amperture-periphlib">MSP430 peripheral library</a></h3>
+      <p>Hand-written MSP430 peripheral library in C: UART, SPI and ADC10.</p>
+      <span class="status">Archived, 2015</span>
+    </section>
+
+    <section class="project">
+      <h3><a href="https://github.com/Amperture/stm32f4xx-amperture-periphlib">STM32F4 peripheral library</a></h3>
+      <p>Hand-written peripheral library for the STM32F4 family.</p>
+      <span class="status">Archived, 2016</span>
+    </section>
+
+    <section class="project">
+      <h3><a href="https://github.com/Amperture/nexsmart-sensebar-server">BeagleBone display host</a></h3>
+      <p>BeagleBone Black host for an MSP430 display. Decodes temperature from raw
+      BLE advertisement packets and drives the display over UART.</p>
+      <span class="status">Archived, 2015</span>
+    </section>
+
+    <section class="project">
+      <h3><a href="https://github.com/Amperture/twitch-sbc-integration">Twitch events on a single-board computer</a></h3>
+      <p>Brings Twitch events (follows, subscriptions, donations, chat commands) to
+      LEDs via a BeagleBone or Raspberry Pi.</p>
+      <span class="status">Archived, 2026</span>
+    </section>
+
+    <h2>Professional work</h2>
+
+    <section class="project">
+      <h3>Embedded Systems Developer, Intern (2014–2015)</h3>
+      <p>Firmware and server work for a company (name withheld).</p>
+      <ul>
+        <li>Bare-metal TM4C firmware: clock tree and PLL setup, interrupt-driven I/O</li>
+        <li>Sensor nodes reporting over UART</li>
+        <li>BeagleBone Linux server in Python, reading Bluetooth serial links</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Code: <a href="https://github.com/Amperture">github.com/Amperture</a></p>
+      <p>Contact: <a href="mailto:amp@amperture.com">amp@amperture.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
